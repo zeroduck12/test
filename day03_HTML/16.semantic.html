@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        - semantic tag : 의미론적 tag
+        - 문서의 정보를 보다 잘 표현하기 위해서 의미에 맞는 태그를 잘 사용해야 한다.
+        - 단순히 div tag로만 모든 구조를 짜는 것보다 더 한눈에 알아볼 수 있기 떄문에 , 다른 개발자들이 코드를 유지보수하기가 더 편해진다.
+            article : 본문
+            aside   : 광고와 같이 페이지의 내용과는 관계가 적은 부분
+            details : 기본적으로 표시되지 않는 정보들 정의
+            foot    : 하단의 하단에 위치하는 사이트나 문서의 전체적인 정보를 정의
+            header  : 화면의 상단에 위치하는 사이트나 문서의 전체적인 정보를 정의
+            main    : 문서에서 가장 중심이 되는 컨텐츠를 정의
+            nav     : 문서의 네비게이션 항목을 정의
+            section : 문서의 구획들을 정의
+    -->
+
+    <!-- 페이지의 전체 폭을 결정하기 위한 영역-->
+    <div>
+        <!-- 상단 헤더 -->
+        <header>
+            <hgroup>
+                <h1>서바이벌 게임팀</h1>
+            </hgroup>
+            <nav>
+                <ul>
+                    <li><a href="">팀소개</a></li>
+                    <li><a href="">멤버전용</a></li>
+                    <li><a href="">커뮤니티</a></li>
+                    <li><a href="">가이드</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- 중앙 영역 -->
+        <section>
+            <article>
+                <div>
+                    <h2>서바이벌 게임이란?</h2>
+                    <p>
+                        서바이벌 게임 또는 줄여서 서바이벌은 총으로 하는 게임의 일종이다.
+                    </p>
+                </div>
+                <div>
+                    <h2>서바이벌 게임의 목적</h2>
+                    <p>
+                        * 무한 경쟁 시대에 적응하려고 하는 자세
+                        * 조직구성원으로 하여금 창의적이며 유기적인 조직활동
+                        * 기존의 사고와 행동에서 탈피 <details value ="디테일">디테일 태그 알아보기</details>
+                    </p>
+
+                </div>
+            </article>
+
+        </section>
+        
+        <hr>
+        <!-- 하단 영역-->
+        <footer>
+            <address>
+                copyright 2023. codingbox
+            </address>
+        </footer>
+
+    </div>
+
+
+</body>
+</html>

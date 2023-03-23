@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 함수 선언
+        function f(x,y){
+            var z = x+y;
+            //조건
+            if(z<10){
+                return;
+            }
+            return z;
+        }
+        
+        //함수의 호출
+        var a = f(2,1);
+        var b = f(5,7);
+        var c = f(10,5);
+        var d;
+
+        document.write("<h1>"+a+"</h1>");
+        document.write("<h1>"+b+"</h1>");
+        document.write("<h1>"+c+"</h1>");
+        document.write("<h1>"+d+"</h1>");
+
+
+    </script>
+</body>
+</html>

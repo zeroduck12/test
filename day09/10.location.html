@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="네이버로 이동하기" onclick="goNaver()">
+
+
+    <script>
+
+        document.write("<p>포트번호 부분: " + location.port + "</p>");  // 포트번호가 기본인 80번이라서 나오지 않는다.
+        document.write("<p>프로토콜 종류: " + location.protocol + "</p>");
+        document.write("<p>문서의 url 주소: " + location.href + "</p>");
+
+        function goNaver(){
+            if( confirm("정말 네이버로 이동하겠습니까?")){
+                location.href = "https://naver.com"
+            }
+        }
+
+    </script>
+
+</body>
+</html>

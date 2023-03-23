@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <h1>둘리의 과목점수</h1>
+    <ol id="list"></ol>
+
+
+    <script>
+        let dooley = {
+            r1 : {subject : "HTML5", point : "78"},
+            r2 : {subject : "CSS", point : "82"},
+            r3 : {subject : "Javascript", point : "63"}
+        };
+        let list = "";
+
+        list += "<li>"+dooley.r1.subject +" : "+ dooley.r1.point + "</li>";
+        list += "<li>"+dooley.r2.subject +" : "+ dooley.r2.point + "</li>";
+        list += "<li>"+dooley.r3.subject +" : "+ dooley.r3.point + "</li>";
+
+
+        $("#list").html(list);
+        
+
+
+        // for(let i = 0; i <3; i++){
+        //  }
+
+    </script>
+</body>
+</html>

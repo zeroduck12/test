@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <ul class = "list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <script>
+        //each는 이렇게도 사용이 가능하다.
+        //퀴즈인데 스타일 태그안에다가 뭔가를 적어서 색깔을 각각입혀보자
+
+        $('.list li').each(function(index, item){
+            // index : 인덱스, item : 해당 선택자의 객체
+            // $(item).addClass("li_0" + index);
+
+            $(this).addClass("li_0"+index);
+
+
+        });
+    </script>
+
+
+</body>
+</html>

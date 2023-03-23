@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" id="btn1" value="button1">
+    <input type="button" id="btn2" value="button2">
+    <script>
+        let t1 = document.getElementById('btn1');
+        let t2 = document.getElementById('btn2');
+
+        function btn_listener(event){               //event 파라미터 받아도되고 안받아도 됨
+            alert('1');
+        }
+
+        t1.addEventListener('click', btn_listener);
+        t2.addEventListener('click', btn_listener);
+
+    </script>
+</body>
+</html>

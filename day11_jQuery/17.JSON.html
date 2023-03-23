@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <div id="console"></div>
+    
+    <script>
+        //json데이터 구성
+        let student = {
+            name : "jQuery학생",
+            age : 19,
+            height : "175cm"
+        };
+
+        //HTML태그 구성하기
+        let mytage = "<h1>" + student.name + "</h1>";
+        mytage += "<h2>" + student.age + "</h2>";
+        mytage += "<h2>" + student.height + "</h2>";
+
+        $("#console").html(mytage);
+
+    </script>
+</body>
+</html>

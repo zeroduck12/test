@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// let s = ['이유덕', '이재영', '권종표', '이재영', 
+//             '박민호', '강상희', '이재영', '김지완', '최승혁', 
+//             '이성연', '박영서', '박민호', '전경헌', '송정환', 
+//             '김재성', '이유덕', '전경헌'];
+
+//             함수 생성(11시 50분까지, 쉬는시간 포함)
+//             1-1. 김씨와 이씨는 각각 몇명인가?
+//             1-2. "이재영"이라는 이름이 몇번 반복되나?
+//             1-3. 중복되지 않는 이름을 출력하세요
+//             1-4. 중복되지 않는 이름을 오름차순으로 출력
+
+
+            let s = ['이유덕', '이재영', '권종표', '이재영', 
+            '박민호', '강상희', '이재영', '김지완', '최승혁', 
+            '이성연', '박영서', '박민호', '전경헌', '송정환', 
+            '김재성', '이유덕', '전경헌'];
+
+        //1-1번
+        function howMany(array,value){
+            let howManyNum = 0;
+            for(let i = 0; i < array.length; i++){
+                if( array[i][0] == value){
+                    howManyNum += 1;
+                }
+            }
+            return document.write("<p>"+value + "씨는" +"s 배열에서 " + howManyNum + "명입니다.</p>");
+        }
+
+        howMany(s,'김');
+        howMany(s,'이');
+
+        //1-2번
+        function howMany2(array, value){
+            let howManyNum2 = 0;
+            for(let i = 0; i < array.length; i++){
+                if( array[i] == value){
+                    howManyNum2 += 1;
+                }
+            }
+            return document.write("<p>"+value + "는(은) " +"s 배열에서 " + howManyNum2 + "번 반복됩니다.</p>");
+        } 
+            
+        howMany2(s,"이재영");
+        howMany2(s,'박민호');
+        
+        //1-3번. 중복되지 않는 이름을 출력하세요
+        function naming3(array){
+            let uniq = [];
+            for(let i = 0; i < array.length; i++){
+                let count = 0;
+                for(let j = 0; j < array.length; j++){
+                    if(array[i] == array[j]){               //i번째와j번쨰가 같으면 카운트1씩 증가
+                        count++;
+                    }
+                }
+                if(count == 1){
+                    uniq.push(array[i]);                //카운트가 1이다 는 즉 유니크하다는 뜻
+                }
+
+            }
+
+            return uniq;
+        }
+
+        document.write(naming3(s));
+
+
+        //1-4번. 중복되지 않는 이름을 오름차순으로 출력
+
+        function naming4(array){
+            return naming3(array).sort();
+        }
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write(naming4(s));
+
+    </script>
+</body>
+</html>

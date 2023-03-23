@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        화살표 함수
+        - 함수표현식보다 단순하고 간결한 문법으로 함수를 만들 수 있는 방법이 있다.
+        
+        매개변수가 없는 경우 : 
+        - () => {...} :
+        
+        매개변수가 1개인 경우 소괄호를 생략할 수 있다.( 예를들어 매개변수 x): 
+        - x => {...} :
+        
+        매개변수가 여러 개인 경우, 소괄호를 생략할 수 없다.
+        - (x,y) => {...}
+
+        함수 몸체 부분
+        - x => { return x * x}
+        - x => x * x : 함수 몸체가 한줄의 구문이라면 중괄호를 생략할 수 있으며, 암묵적으로 return된다.
+        - () => {
+            const x = 10;
+            return x;
+        } 
+        */
+        //매개변수가 없는 경우
+        let foo = () => { console.log('foo function')}
+        foo();
+
+        //매개변수가 하나인 경우
+        let foo2 = x => { document.write(x)}
+        foo2('user');
+        
+        let sayHi = x => {alert(x)}
+        sayHi('안녕하세요');
+
+    </script>
+</body>
+</html>

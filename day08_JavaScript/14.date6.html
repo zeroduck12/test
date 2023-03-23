@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="startTimer()">
+<h1 id= "timer"></h1>
+
+
+
+    <script>
+        /* setInterval 함수
+            이 함수는 다른 함수의 이름과 1/1000초 단위의 시간값을 파라미터로 설정하여
+            정해진 시간에 한번씩 파라미터로 전달된 함수를 반복적으로 호출한다.
+
+            setInterval(printTime, 1000);
+                printTime : 함수
+                1000 : 1초마다 한번씩 printTime함수를 실행
+        
+            setInterval(function(){
+                ...1초마다 실행될 구문...
+            }, 1000);
+            : 별ㄷ의 함수를 정의하는 형태가 아닌
+            function(){...} 블록을 직접 설정하는 것도 가능하다.
+            이처럼 파라미터 형태로 전달되는 함수를 콜백함수라고 한다.
+            들어갈 함수에 파라미터는 넣을 수 없다.
+        
+        */
+
+        function printTime(){
+            let mydate  = new Date();
+
+            let days = ["일", "월", "화", "수", "목", "금", "토"];
+            
+            let yy = mydate.getFullYear();
+            let mm = mydate.getMonth()+1;
+            let dd = mydate.getDate();
+            
+            let i = mydate.getDay();
+            let day = days[i];
+            let hh = mydate.getHours();
+            let mi = mydate.getMinutes();
+            let ss = mydate.getSeconds();
+            //완성된 현재 시각
+            let result = yy + "-" + mm + "-" +dd + " "  + day + "요일" + hh +  ":" + mi + ":" + ss;
+
+            document.getElementById("timer").innerHTML = result;
+
+            }
+
+            function startTimer(){
+                //printTime이라는 함수를 1초에 한번씩 반복해서 자동 호출
+                setInterval(printTime,1000);
+            }
+
+
+    </script>
+</body>
+</html>

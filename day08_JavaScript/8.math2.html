@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 두 수 사이의 난수를 리턴하는 함수
+        function random(n1,n2){
+            let num = parseInt((1+n2-n1)*Math.random())+n1;
+//            let num = Math.floor((1+n2-n1)*Math.random())+n1;
+            return num;
+        }
+
+        //함수를 사용해서 0부터 9사이의 난수 출력
+        document.write(random(0,9));
+        document.write("<br>");
+        document.write(random(0,9));
+        document.write("<br>");
+        document.write(random(0,9));
+        document.write("<br>");
+        document.write(random(0,9));
+        document.write("<br>");
+        document.write(random(0,9));
+        document.write("<br>");
+        document.write(random(0,9));
+        document.write("<br>");
+        document.write(random(0,9));
+        document.write("<br>");
+        document.write(random(0,9));
+        document.write("<br>");
+        document.write(random(0,9));
+        document.write("<br>");
+        document.write(random(0,9));
+        document.write("<br>");
+        document.write(random(0,9));
+        document.write("<br>");
+        document.write(random(0,9));
+        document.write("<br>");
+        
+
+        //함수를 사용해서 5자리 인증번호를 출력
+        // document.write(random(10000,99999));
+        let auth = "";
+        for(let i = 0; i<5; i++){
+            auth +=random(0,9);
+        }
+
+        document.write(auth);
+
+    </script>
+</body>
+</html>

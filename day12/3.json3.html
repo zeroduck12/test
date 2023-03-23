@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <p id="description"></p>
+    <p>총 게시물 수 : <span id="total"></span></p>
+    <table width="800" border ="1">
+        <thead>
+            <tr>
+                <th align = "center">번호</th>
+                <th align = "center">제목</th>
+                <th align = "center">조회수</th>
+                <th align = "center">작성일</th>
+            </tr>
+        </thead>
+        <tbody id="list">
+
+        </tbody>
+    </table>
+    <script>
+        //JSON 데이터 정의
+        let subject =["Javascript", "jQuery", "Ajax" ];
+
+        $("#title").html("<h1>"+ subject[0] + " + " + subject[1] + " + " + subject[2] + "</h1>");
+        
+        $("#description").html("<h1>"+ subject[0] + " 강의노트 입니다</h1>");
+
+
+        let article = [
+        [
+            {"article_number" : 4, "article_title" : "4강-함수", "article_click_count" : 3, "article_date" : "2018.02.27"}
+        ],
+        [
+            {"article_number" : 3, "article_title" : "3강-반복문", "article_click_count" : 6, "article_date" : "2018.03.08"}
+        ],
+        [
+            {"article_number" : 2, "article_title" : "2강-조건문", "article_click_count" : 15, "article_date" : "2018.03.07"}
+        ],
+        [
+            {"article_number" : 1, "article_title" : "1강-변수와 연산자", "article_click_count" : 19, "article_date" : "2018.03.05"}
+        ]
+        ];
+        
+        $("#total").html(article.length);
+        let trtdlist = "";
+
+        for(let i = 0; i<article.length; i++){
+            for(let j = 0; j <article[i].length;j++){
+                trtdlist +=
+                "<tr><td>"+article[i][j].article_number  + "</td>" + 
+                "<td>"+article[i][j].article_title  + "</td>"+
+                "<td>"+article[i][j].article_click_count  + "</td>"+
+                "<td>"+article[i][j].article_date  + "</td></tr>"
+                ;
+            }
+        }
+
+        $("#list").html(trtdlist);
+    </script>
+    
+</body>
+</html>

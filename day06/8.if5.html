@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var point = 82;
+        var grade = null;
+
+        if(point > 90 && point <= 100){
+            grade = "A";
+        } else if (point > 80 && point <= 90){
+            grade = "B";
+        } else if (point > 70 && point <= 80){
+            grade = "C";
+        }
+        else{  grade = "C";
+        }
+
+        var msg = "<h1>" + grade + "학점입니다.</h1>";
+
+        document.write(msg);
+        
+
+    </script>
+
+</body>
+</html>

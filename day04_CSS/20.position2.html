@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent, #grand, #other{
+            border: 5px solid tomato;
+        }
+
+        #grand{
+            /* static이 아닌 부모가 나타낼때까지 독릭접으로 행동하다가, static이 아닌 부모가 나타나면 다시 그 브모에 종속적이다*/
+            position: relative;
+        }
+
+        #me{
+            background-color: black;
+            color: white;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+
+
+    </style>
+
+    
+</head>
+<body>
+    <div id ="other">other</div>
+    <div id="grand">grand
+        <div id="parent">
+            parent
+            <div id="me">me</div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>

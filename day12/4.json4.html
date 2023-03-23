@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <p id="description"></p>
+    <p>총 게시물 수 : <span id="total"></span></p>
+    <table width="800" border="1">
+        <thead>
+            <tr>
+                <th align="center">번호</th>
+                <th align="center">제목</th>
+                <th align="center">조회수</th>
+                <th align="center">작성일</th>
+            </tr>
+        </thead>
+        <tbody id="list">
+        </tbody>
+    </table>
+
+    <script>
+        // JSON 데이터 정의
+        let bbs = {
+            title : "javascript + jQuery + Ajax 완벽가이드",
+            description : "javascript 강의노트 입니다.",
+            total:4,
+            item:[
+                {no:4, subject:"4강", hit:3, date:"2023.03.05"},
+                {no:3, subject:"3강", hit:6, date:"2023.03.06"},
+                {no:2, subject:"2강", hit:15, date:"2023.03.07"},
+                {no:1, subject:"1강", hit:19, date:"2023.03.08`"}
+            ]
+        }
+
+        $("#title").html(bbs.title);
+        $("#description").html(bbs.description);
+        $("#total").html(bbs.total);
+
+        let tag = "";
+        for( let i =0; i<bbs.item.length; i++ ){
+            tag += "<tr>";
+            tag += "<td>" + bbs.item[i].no + "</td>"
+            tag += "<td>" + bbs.item[i].subject + "</td>"
+            tag += "<td>" + bbs.item[i].hit + "</td>"
+            tag += "<td>" + bbs.item[i].date + "</td>"
+            tag += "</tr>";
+        }
+
+        $("#list").html(tag);
+    </script>
+</body>
+</html>

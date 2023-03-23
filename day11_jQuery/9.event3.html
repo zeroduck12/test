@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>jQuery</title>
+    <style>
+    .event-box {
+        border: 5px solid #007;
+        background: #d5d5d5;
+        color: #009;
+        font-size: 32px;
+        padding: 50px 0;
+        text-align: center;
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="listener" class="event-box">
+        Mouse Here~!!!
+    </div>
+    <div id="listener2" class="event-box">
+        Mouse2 Here~!!!
+    </div>
+    <div id="listener3" class="event-box">
+        Mouse3 Here~!!!
+    </div>
+
+
+<!-- 
+    mouseenter -> Mouse Enter
+    mouseleave -> Mouse Leave
+    mousedown -> Mouse Down
+    mouseup -> Mouse Up
+-->
+
+   <script>
+        $("#listener").on("mouseenter", function(){
+            alert("마우스 들어옴");
+        });
+        $("#listener").on("mouseleave", function(){
+            alert("마우스 나감");
+        });
+        $("#listener2").on("mousedown", function(){
+            alert("마우스 눌림");
+        });
+        $("#listener3").on("mouseup", function(){
+            alert("마우스 뗌");
+        });
+   </script>
+   
+</body>
+
+</html>

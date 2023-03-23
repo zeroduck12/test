@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var vscope = 'global';
+        function fscope(){
+            //유효성의 범위가 작은 부분이 유선한다. 즉, 전역변수와 지역변수가 동시에 정의되어있다면 지역변수가 우선한다.
+            var vscope = 'local';
+            alert ('함수안'+vscope);
+        }
+
+        fscope();
+        alert('함수밖'+vscope);
+    </script>
+</body>
+</html>

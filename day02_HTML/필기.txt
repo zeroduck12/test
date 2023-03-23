@@ -1,0 +1,8 @@
+1. 설치
+ - visual studio code
+ - alt + b or alt + shift + b : 브라우저 열기
+ - ctrl + + or - : 화면 확대 or 축소
+ - ctrl + b : 전체화면, 다시 돌아가기
+ - ! + enter : 기본 html 문서 타입 작성
+
+

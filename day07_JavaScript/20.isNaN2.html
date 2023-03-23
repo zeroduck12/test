@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sumInt(x,y){
+            let z = parseInt(x) + parseInt(y);
+            
+            let is_NaN = isNaN(z);
+
+            if (is_NaN){
+                z = "숫자 형태이거나 숫자값이 전달되어야 합니다."
+            } 
+            return z;
+        }
+
+        let sum1 = sumInt("a",1);
+        let sum2 = sumInt("1","2");
+        let sum3 = sumInt(100,"5.1");
+        let sum4 = sumInt(-1,"-100");
+
+        document.write("<h1>" + sum1 + "</h1>"); 
+        document.write("<h1>" + sum2 + "</h1>"); 
+        document.write("<h1>" + sum3 + "</h1>"); 
+        document.write("<h1>" + sum4 + "</h1>"); 
+    </script>
+</body>
+</html>

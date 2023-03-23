@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            현재 요일을 출력하기
+            - 일요일 : 0 ~  토요일 : 6이다.
+            - 숫자값이기 때문에 실제 요일을 의미하는 문자열을 출력하기 위해서는 배열의 인덱스를 활용
+        */
+        let days = ["일", "월", "화", "수", "목", "금", "토"];
+
+        let mydate = new Date();
+        let i = mydate.getDay();
+        let day = days[i];
+        document.write("<h1>"+ day + "</h1>");
+
+    </script>
+</body>
+</html>

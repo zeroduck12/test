@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <h1>둘리의 과목점수</h1>
+    <ol id="list"></ol>
+
+    <script>
+    let dooley = [
+            {subject : "HTML5", point : "78"},
+            {subject : "CSS", point : "82"},
+            {subject : "Javascript", point : "63"}
+    ];
+
+    let list = "";
+
+    for(let i = 0; i<dooley.length;i++){
+        list += "<li>"+dooley[i].subject +" : "+ dooley[i].point + "</li>";
+    }
+
+    $("#list").html(list);
+    
+    </script>
+</body>
+</html>

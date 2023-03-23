@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 변수의 NaN 여부를 검사하는 함수
+        // - isNaN함수는 파라미터로 전달되는 변수의 NaN 여부를 boolean형태로 리턴한다.
+        // - 파라미터가 숫자로 변환할 수 없는 문자열일 경우에는 NaN형태이므로 true리턴
+        // - 파라미터가 숫자 모양을 한 문자열이거나 실제 숫자형 변수일 경우네는 NaN이 아니므로 false를 리턴한다.
+        // - 숫자인지검사하기
+        // - parseInt함수나 Number함수의 정상작동을 보장하기 위해서는 파라미터를 전달하기 전에 해당 값이 NaN이 아니라는 것을 검사해야한다.
+         
+        // - isNaN함수의 결과를 부정하면 그 값은 숫자값이거나 숫자형으로 변환가능한 문자열이라는 의미가 된다.
+        // - let is_num = !isNaN(검사할값);
+
+        let v1 = "가나다라";
+        let v2 = "123456";
+
+        let is_num1 = !isNaN(v1);
+        let is_num2 = !isNaN(v2);
+
+        if(is_num1){
+            document.write("<h1>"+ v1 +"은 숫자이다.</h1>");
+        } else{
+            document.write("<h1>"+ v1 +"은 숫자가 아니다.</h1>");
+        }
+      
+        if(is_num2){
+            document.write("<h1>"+ v2 +"은 숫자이다.</h1>");
+        } else{
+            document.write("<h1>"+ v2 +"은 숫자가 아니다.</h1>");
+        }
+
+    </script>
+</body>
+</html>

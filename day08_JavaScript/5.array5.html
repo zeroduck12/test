@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*함수 작성하기 문제
+        let arr = ["Hello"  , 10  , 32.6  , true];
+        파라미터 값(배열,값1)
+        값1이 해다 배열에 있으면 그 인덱스 값을 반환해주는 함수
+        */
+
+        let arr = ["Hello"  , 10  , 32.6  , true];
+        
+        function arrHaveOrNot(array,value){
+
+            let indexNum = arrary.indexof(value);
+
+            if (indexNum == -1 ){           //없는 경우
+                document.write("해당 data" + value + "는" + array + "배열에 존재하지 않습니다");  
+            } else{                         //있는 경우
+                document.write(array + "배열에서" + value + "는" + indexNum +"번 인덱스에 있습니다.");   
+            }
+        }
+
+        
+        arrHaveOrNot(arr,32.5);
+
+        arrHaveOrNot(arr,32.6);
+
+
+    </script>
+</body>
+</html>

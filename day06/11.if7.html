@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* - prompt 아이디를 입력받음
+        - id가 uesrtest가 맞으면 prompt '패스워드를 입력해라'
+        그렇지 않으면 인증 실패
+        - 입력받은 패스워드가 1234가 맞으면 '인증되었습니다. 경고창 출력'
+        - 그렇지 않으면 '인증실패' 경고창
+        */
+
+        var id = prompt("아이디를 입력해라");
+
+        if( id == 'usertest' ){
+            var pw = prompt("비밀번호를 입력해라");
+            if(pw == 1234){
+                alert('인증 성공');
+            } else{ 
+                alert('인증 실패');
+            }
+            
+        } else{
+            alert('인증 실패');
+        }
+
+
+
+    </script>
+</body>
+</html>

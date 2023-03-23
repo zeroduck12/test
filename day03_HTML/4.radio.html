@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        - radio : 여러 항목 중 한 가지만 선택 가능함
+        - checkbox : 여러 항목 중 복수로 선택 가능함
+        - radio 나 checkbox는 두 개 이상의 요소가 하나의 그룹으로 묶여있어야 하는데, 이를 위해서 name속성의 값을 동일하게 명시해야한다.
+    -->
+    <p>
+        <input type="radio" name = "color">
+        <input type="radio" name = "color">
+        <input type="radio" name = "color">
+        <input type="radio" name = "color">
+    </p>
+    <p>
+        <input type="radio" name = "color2">
+        <input type="radio" name = "color2">
+        <input type="radio" name = "color2">
+        <input type="radio" name = "color2">
+    </p>
+    <hr>
+    <p>
+        <h1>색상(단일선택)</h1>
+        붉은색 : <input type="radio" name = "color3" value="red" > 
+        검은색 : <input type="radio" name = "color3" value="balck" checked>     <!-- checked : 검은색이 선택된 채로 사용자에게 보여줌--> 
+        파란색 : <input type="radio" name = "color3" value="blue"> 
+    </p>
+</body>
+</html>

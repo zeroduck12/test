@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <h1 id="name"></h1>
+    <p>since <span id="since"></span></p>
+    <h2>주요부서</h2>
+    <ul id="department"></ul>
+    <h2>사업분야</h2>
+    <ul id="biz"></ul>
+    
+    <script>
+        let company = {
+            name : "아이티페이퍼",
+            since : 2017,
+            department : ["기획팀", "영업팀", "디자인팀", "개발팀"],
+            biz : ["소프트웨어개발", "통신판매원", "위치정보서비스"]
+        };
+
+        $("#name").html(company.name);
+        $("#since").html(company.since);
+
+        //주요부서를 출력하기위하여 배열을 반복문으로 읽는다.
+        let dept_li = "";
+        for(let i = 0; i<company.department.length;i++){
+            dept_li += "<li>" + company.department[i] + "</li>";
+        }
+        $("#department").html(dept_li);
+        
+        //사업분야를 출력하기 위함
+        let biz_list = "";
+        for(let i = 0; i<company.biz.length;i++){
+            biz_list += "<li>" + company.biz[i] + "</li>";
+        }
+        $("#biz").html(biz_list);
+
+    </script>
+</body>
+</html>

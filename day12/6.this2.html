@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <button id="single">클릭하세요</button>
+    </div>
+    <hr>
+    <div>
+        <button class="multi">
+            button0(0번 클릭됨)
+        </button>
+        <button class="multi">
+            button1(0번 클릭됨)
+        </button>
+        <button class="multi">
+            button2(0번 클릭됨)
+        </button>
+    </div>
+<script>
+    let count = {single : 0};
+
+    //하고 싶은것 : 몇번클릭했는지를 알려주는 것
+    $("#single").click(function(){
+        count.single++;
+        $(this).html(count.single + "번 클릭했습니다.");
+    });
+
+    let countMulti =  [{multi : 0}, {multi : 0}, {multi : 0}];
+    $(".multi").click(function(){
+        for(let i = 0; i <countMulti.length;i++){
+            countMulti[i].multi ++;
+            $(this).html(countMulti[i].multi + "번 클릭했습니다.");
+        }
+    });
+
+
+</script>
+
+</body>
+</html>

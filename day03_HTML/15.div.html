@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 영역을 구분하기 위한 <div> 태그
+    상단, 메뉴, 본문, 하단 등과 같이 웹 페이지의 레이아웃에 대한 영역을 구분하기 위해 사용된다.
+    서로 중첩되어 사용할 수 있으며, 다른 태그를 포함할 수 있다.
+    - id속성 : 영역을 나누는 div에 사용딜 경우, 해당 태그가 어떤 영역으로 사용되었는지를 파악하기 위해 지정된다.
+                다른 요소와 중복된 값을 갖지 못한다.
+    -->
+
+    <!--사이트 전체 영역 id : container-->
+    <div id="container">
+        <!-- 사이트 상단 영역(로고, 메인메뉴 등) id : header-->
+        <div id="header">
+            <h1>우리사이트</h1>
+            <hr>
+            <!-- 왼쪽 사이드바 영역-->
+            <div id="sidebar">
+                <h2>메뉴 선택하기</h2>
+                <ul>
+                    <li>메뉴1</li>
+                    <li>메뉴2</li>
+                    <li>메뉴3</li>
+                </ul>
+            </div>
+            <hr>
+            <!-- 오른쪽 본문 영역-->
+            <div id="main">
+                <!--제목-->
+                <h1>웹접근성이란?</h1>
+                <h2>장애에 구애 없이 모든 사람들이 정보를 공유할 수 있는 공간 만들기</h2>
+                <p>
+                    월드와이드 웹 컨소시엄..
+                </p>
+            </div>
+        <!--사이트의 내용 영역(사이드바, 내용 등) id : content-->
+        <div id="content">
+        </div>
+
+        <hr>
+        <div id="footer">
+            <address>
+                copyright&copy;codingbox.com
+            </address>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

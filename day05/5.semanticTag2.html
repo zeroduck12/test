@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #e0f2f1;            
+        }
+        div#wrap{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        header{
+            width: 100%;
+            height: 150px;
+            background-color: #fff9c4;
+        }
+        aside{
+            float: left;
+            width: 30%;
+            height: 700px;
+            background-color: #1e88e5;;
+        }
+        section{
+            float: left;
+            width: 70%;
+            height: 700px;
+            background-color: #f44336;;
+        }
+        footer{
+            clear:both;
+            width: 100%;
+            height : 50px;
+            background: #8bc34a;
+        }
+        /* mediaquery */
+        /* 노트북의 사이즈일 경우에 1220px을 많이 쓴다. */
+        /* 태블릿의 사이즈일 경우에 768px을 많이 쓴다. */
+        @media (max-width:768px) {
+            div#wrap{width: 100%;}
+            header{height: 300px;}
+            aside{height: 900px;}
+            section{height: 900px;}
+            footer{height: 300px;}
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header></header>
+        <aside></aside>
+        <section></section>
+        <footer></footer>
+    </div>
+
+
+</body>
+</html>

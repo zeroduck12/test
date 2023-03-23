@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 태그 셀렉터*/
+    h2{
+        color : red;    
+    }         
+        /* 클래스 셀렉터*/
+    .myclass{
+        color : lightblue;
+    }
+        /* id 셀렉터*/
+    #myid{
+        color : blueviolet
+    }
+
+        /* 조합형 : 두 조건이 충족하는 경우에만 적용된다*/
+    h2.myclass{
+        color : green;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>CSS 설렉터를 알아봅시다.</h1>
+    <p>
+        셀렉터란? CSS가 적용될 대상을 지정하는 방법
+    </p>        
+    <h2>태그 셀렉터</h2>
+    <div>
+        <h2 class= "myclass">클래스 설렉터를 알아봅시다.</h1>
+    <p class= "myclass">
+        서로 다른 여러 개의 요소에 적용할 수 있다.
+    </p>
+    <div>
+        <h2 id= "myid">아이디 설렉터.</h1>
+    <p id= "myid">
+        태그+아이디, 태그+클래스 형식조합가능
+    </p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            Date 내장 객체
+            - 시스템의 현재 시각을 표현하는 객체 생성
+                let mydate = new Date();
+            - 특정 날짜를 내장하고 있는 객체 생성. 월에 대한 값이 0부터 시작하기 때문에 1을 더해줘야함.
+                let theday = new Date(년, 월-1, 일);
+        */
+
+        let mydate = new Date();
+        //년, 월, 일 리턴
+        let yy = mydate.getFullYear();
+        let mm = mydate.getMonth()+1;
+        let dd = mydate.getDate();
+
+        let result = yy + "-" + mm + "-" +dd;
+        document.write(result);
+ 
+    </script>
+</body>
+</html>

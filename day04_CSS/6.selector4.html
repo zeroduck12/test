@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #container > #header > h1 {
+            color: tomato;
+        }
+        #container > #content >h1 {
+            color: aqua;
+        }
+        #header > .sub{
+            color:green;
+        }
+        #content > .sub{
+            color : purple;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>자식셀럭터</h1>
+            <p class="sub">
+                자식 셀렉터에 대해서 알아보자
+            </p>
+        </div>
+        <hr>
+        <div id="content">
+            <h1>꺽쇠(">")에 의한 HTML태그 계층표현</h1>
+            <p class="sub">
+                자식셀럭터는 "IN"의 의미가 있다.
+            </p>
+        </div>    
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1">
+        <select name="sel">
+            <option>---선택하세요---</option>
+            <option value="item1">항목1</option>
+            <option value="item2">항목2</option>
+        </select>
+    </form>
+
+    <!--
+        - selectedIndex : 사용자가 선택한 위치
+        document.form1.sel.selctedIndex;
+
+        - 세 번째 항목 선택하기(0부터 시작한다.)
+        - 임의의 숫자값을 대입한 위치에 해당하는 <option>태그가 강제로 선택된다.
+        document.form1.sel.selctedIndex = 2; 
+
+        - 선택 항목의 값 조회하기
+        <select> 태그의 객체는 하위<option>태그 객체를 배열 형태로 가지고 있기 때문에,
+        배열의 인덱스 값을 selectedIndex 속성값으로 사용하면, 선택한 <option>태그의 객체를 획득할 수 있다.
+        document.form1.sel[document.form1.sel.selctedIndex].value;
+
+        - 선택 여부 검사하기
+        let myform = document.form1;
+        if ( myform.sel.selectedIndex < 1){
+            ..선택하지 않았을 경우 처리..
+        }
+     -->
+</body>
+</html>

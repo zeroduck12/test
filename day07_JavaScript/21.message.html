@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        alert 대화상자
+        - 웹페이지에서 가장 일반적으로 사용되는 대화상자
+        - "확인" 버튼이 함께 표시
+        - alert("알림 대화상자");
+
+        prompt 대화상자
+        - 사용자의 입력 내용을 알고자하는 경우에 사용하는 대화상자
+        - prompt("입력할 대화상자", "")
+        - 만약 아무런 값도 입력되지 않았거나, 사용자가 취소버튼을 눌렀다면 처음 설정한 빈 문자열("")이 리턴이 된다.
+        
+        confirm 대화상자
+        - 사용자에게 어떠한 결정사항에 대한 긍정 혹은 부정의 답을 얻고자 하는 경우에 표시되는 대화상자
+        - let is_ok = confirm("확인 대화상자");
+        - confirm 함수는 사용자가 긍정의 버튼을 클릭하면 true, 부정의 버튼을 클릭하면 false를 리턴한다.
+        */
+
+
+        let user_id = prompt("아이디를 입력하세요","");
+        //빈 문자열이 아닌 경우에만 실행
+        if(user_id !=""){
+            alert("안녕하세요" + user_id + "님");
+            
+            let result = confirm("정말 로그아웃하시겠습니까?");
+            if(result){
+                alert("로그아웃 되었습니다.")
+            } else{
+                alert("로그아웃이 취소 되었습니다.")
+            }
+        
+        
+        }
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            두 날짜 차이 구하기 -> TimeStamp 값
+            - TimeStamp는 1970년 1월 1일 자정부터 지금까지 지난 시각을 초 단위로 바꾼 값
+            - javascript에서는 getTime() 함수를 통해 Date 객체가 담고 있는 시각을 1/1000 초 단위의
+                TimeStamp형태로 변환하여 리턴해준다.
+            - 두 개의 Date객체를 각각 TimeStamp로 변환하여 큰 값에서 작은 값을 뺀 후에, 이 값을 (24시간 * 60분 * 60초 * 1000)으로
+            나누면 두 객체 사이의 날짜 차이값을 구할 수 있다.
+            - 나눈 값은 소수점 이하는 절단해야 한다.
+            두 객체 사이의 차가 3.5일로 계산된 경우, 3일 5시간 을 의미하는데 4일로 판단하지는 않기 때문이다.
+        */
+
+        let theday = new Date(2023,0,1);
+        let today = new Date();
+
+        let cnt = today.getTime() - theday.getTime();
+        
+        let daygap = Math.floor( cnt/(24 * 60 * 60 * 1000));
+        document.write("<h1>올해는 "+ daygap + "일이 지났습니다. </h1>");
+
+
+
+
+    </script>
+</body>
+</html>

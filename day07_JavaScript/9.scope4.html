@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var vscope = 'global';
+        function fscope(){
+            vscope = 'local';
+            alert ('함수안'+vscope);
+        }
+
+        fscope();
+        alert('함수밖'+vscope);
+
+        //스코프3번과 다른점으로 변수 선언부임. 동일한 변수병으로 선언이 될때 오류로 인식하지않음.
+        
+    </script>
+</body>
+</html>

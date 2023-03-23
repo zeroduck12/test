@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        <input type="" name= "" id= "" value="" maxlength=""
+        - 회원가입을 할 때 아이디와 패스워드를 입력받는 칸을 만들 때 사용하는 태그
+        - 입력 양식을 표시하는 태그
+        - name 속성은 웹 프로그램과 연계되는 속성으로 한 페이지 안에서 고유한 값을 명시해야 한다.
+        - id속성은 해당 페이지에서 그 요소를 식별하기 위한 값으로 고유한 값을 명시해야 한다.
+        - id값과 name값은 서로 동일하게 지정해도 무관하며 보통은 같은 값으로 지정한다.
+        - type 속성에 따라 화면에 표시되는 요소의 종류가 결정된다.(text, password, hidden 등등)
+        - value 속성은 해당 요소에 기본적으로 작성되어 있을 값을 기술한다.
+        - maxlength 속성은 텍스트를 입력받는 요소의 경우 maxlength속성을 사용하여, 최대 입력가능한 글자수를 제한할 수 있다.
+        - name은 주로 서버에 전송하기 위한 용도로 입력하는 값
+    -->
+<form action="https://localhost/hidden.jsp">
+    아이디 : <input type="text" name = "idvalue" id = "idvalue" >
+    <br>
+    패스워드 : <input type="password" name = "pwvalue" id = "pwvalue" >
+    <br>
+    <input type="hidden" name = "hide" id = "hide" value="gogo" >
+    <!-- 유저화면상에 표시되지않더라도 유저의 정보를 개발자에게 넘기는 경우에 사용-->
+    <input type="submit">
+</form>
+
+</body>
+</html>

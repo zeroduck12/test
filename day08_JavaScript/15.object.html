@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            javascript 객체 생성 과정
+            - 빈 객체의 생성
+                -> 아무런 기능이 없는 상태의 빈 객체를 생성. 이 상태가 prototype이다.
+            - 변수의 추가가 가능하다.
+            - 함수의 추가가 가능하다.
+            
+            빈 객체 생성
+                let people = {};
+            변수의 추가
+                people.name = "자바 학생";
+                people.gender = "여자"; 
+        */
+
+        let people = {};
+
+        //객체 안에 변수(멤버변수, 프로퍼티,property)
+        people.name = "자바학생";
+        people.gender = "여자"; 
+
+        document.write("<h1>" + people.name + " 님은 "+people.gender+" 입니다</h1>");
+
+    </script>
+</body>
+</html>

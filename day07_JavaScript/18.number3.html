@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //숫자 변환 함수의 한계 : Number함수와 paresInt함수는 파라미터로 전달된 문자열이 숫자형태가 아닌 경우
+        //"Nan" 이라는 값을 리턴, 이 "Nan"값과 숫자 값과의 연산은 모든 결과가 "Nan"이다.
+
+        let a = Number("a");
+        document.write("<h1>a = "+a+"</h1>");
+        
+        let a_sum = a+1;
+        document.write("<h1>a_sum = "+a_sum+"</h1>");
+        
+        let a_str = a+"str";
+        document.write("<h1>a_srt = "+a_str+"</h1>");
+
+    </script>
+</body>
+</html>

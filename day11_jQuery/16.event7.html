@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <h1>.on()</h1>
+    <p>이 문장 위로 마우스를 움직여 보세요.</p>
+    <div></div>
+
+    <script>
+        //오버로딩처럼 on 절안에 2개이상의 마우스 이벤트도 가능하다.
+        $("p").on("mouseenter mouseleave", function(){
+            $("div").append("마우스 커서가 문장 위로 들어오거나 빠져나갔습니다.<br>");
+        })
+    </script>
+</body>
+</html>

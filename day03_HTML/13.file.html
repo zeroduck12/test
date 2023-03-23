@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--
+    - type ="file" 요소는 웹 프로그램으로 파일을 전송할 수 있도록 찾아보기 버튼을 표시하며 
+        한 번에 하나의 파일만 첨부 가능하다.
+    - 단 이 요소가 사용될 경우에는 반드시 <form> 태그에 enctype= "multipart/form-data"
+        속성이 명시되어야한다.
+-->
+
+<body>
+    <form action="" method = "post" enctype="multipart/form-data">
+        <input type="file" name = "profile">
+        <input type="submit">
+    </form>
+</body>
+</html>

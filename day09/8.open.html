@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>window.open 메서드 확인</h1>
+
+    <div>
+    <!-- #을 넣는 다는 것은 자기자신창 즉 새로고침같은것 -->
+        <a href="#" onclick="open1(); return false;">새 창 열기</a> 
+        <a href="#" onclick="open2(); return false;">팝업열기1</a> 
+        <a href="#" onclick="open3('https://naver.com'); return false;">팝업열기2</a> 
+    </div>
+
+    <script>
+        function open1(){
+            open('9.open_test.html');
+        }
+        function open2(){
+            window.open('9.open_test.html', '', 'width=300, height=500');
+        }
+        function open3(url){
+            window.open(url, '', 'width=300, height=500');
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>

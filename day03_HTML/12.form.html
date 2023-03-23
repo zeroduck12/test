@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<!-- 서버로 전송하는 2가지 방법
+    1. <form action="http://localhost/method.jsp" method = "get">   모두가 볼수있는 방식이며 디폴트 방식
+    2. <form action="http://localhost/method.jsp" method = "post">  url을 숨겨서 비밀번호등의 정보를 가리면서 보낼때 사용
+        근데 내부에서 f12누르고 페이로드를 보면 정보가 나오네? 그렇다면 정답은 아님. 더 자세한 것은 JSP시간에 배울 것임
+        하지만 TMI로  배워보자면 enc 즉 암호화된 데이터로 보냄
+        즉 암호화를 했으니 보여져도 상관이 없음.
+        서버에서 정보를 받으면 이건 개발자도 알면안되는 정보자나
+        sha256 이라는게 있어서 단방향 암호화임
+        A라는 글자를 암호화를 하면 어떠한 문자열로 암호화가됨 보통은 이문자를 복호화를 할수있어야하지만 단방향은 암호화만되고 복호화는 안됨
+        pw는 A라는 글자를 암호화된 채로 DB에 저장
+        나중에 로그인할 때 pw란에 A라는 문자를 입력하면 똑같이 암호화가되고 이전에 암호화된 A랑 비교를함.
+        옛날에는 원래의 암호를 알려줬었는데 요즘은 비밀번호를 재발급받는다던가 임시비밀번호를 알려주는 방식이 많음.
+        -->
+
+
+<body>
+    <form action="http://localhost/method.jsp" method = "post">
+        <input type="text" name = "id">
+        <input type="password" name = "pw">
+        <input type="submit">
+    </form>
+
+
+
+</body>
+</html>

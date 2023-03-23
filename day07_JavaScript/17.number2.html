@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=sc, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Number() 같은 경우는 주어진 문자열이 실수 형태로 리턴한다.
+        //parseInt() 같은 경우는 소수점 자리를 내림하고 정수형태로만 리턴한다.
+        
+        let value = "100.6";
+
+        let num1 = Number(value);
+        let num2 = parseInt(value);
+
+        let r1 = num1 +1;
+        let r2 = num2 +1;
+
+        document.write("<h1>r1 =" +r1+"</h1>");
+        document.write("<h1>r2 =" +r2+"</h1>");
+        
+    </script>
+</body>
+</html>

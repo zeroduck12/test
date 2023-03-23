@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" id="btn1" value="property">
+    <input type="button" id="btn2" value="listener">
+    
+    <script>
+
+        function onClick1(event){
+            alert('click!');
+        }
+
+        function onClick2(event){
+            alert('클릭!');
+        }
+
+
+        //property
+        document.getElementById('btn1').onclick = function(){onClick1()};
+        document.getElementById('btn2').onclick = function(){onClick2()};
+
+
+        //listener
+        document.getElementById('btn1').addEventListener('click', onClick1);
+        document.getElementById('btn2').addEventListener('click', onClick2);
+
+        //이벤트를 제거하는 메서드도 존재함.기존 코드를 건드리는것이 부담스러울 경우에 사용
+        document.getElementById('btn1').removeEventListener('click', onClick1);
+
+        document.getElementById('btn1').unbind =  function(){onClick1()};
+
+
+    </script>
+
+    
+</body>
+</html>

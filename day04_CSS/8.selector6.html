@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            /*테두리 : 굵기, 종류, 색상 */
+            border : 1px solid orange;
+        }
+        input[type="radio"], input[type="checkbox"]{
+            /*타입 속성의 값이 radio인 요소와 checkbox인 input요소
+            -- 최신 크롬 적용이 안됨 -- */
+            border : 10px solid tomato;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>회원가입</h1>
+        <fieldset>
+            <legend>기본정보</legend>
+        <div>
+            <label class="title">아이디
+                <input type="text" name="user_id" id="user_id">
+            </label>
+        </div>
+        <div>
+            <label class="title">패스워드
+                <input type="password" name="user_pw" id="user_pw">
+            </label>
+        </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>성별</legend>
+            <div>
+                <label>남자
+                    <input type="radio" name="gender" value="M" id= "gender_m">
+                </label>
+            </div>
+            <div>
+                <label>여자
+                    <input type="radio" name="gender" value="F" id= "gender_f">
+                </label>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>취미</legend>
+            <div>
+                <label>
+                    <input type="checkbox" name="hobby" value="축구" id="hobby1">축구
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="농구" id="hobby2">농구
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="야구" id="hobby3">야구
+                </label>
+            </div>
+        </fieldset>
+        <br>
+    </form>
+
+
+
+</body>
+</html>

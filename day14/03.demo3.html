@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li>HTML</li>
+        <li id="active">CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    
+    <input type="button" value="javascript" onclick="funcJs()">
+    <input type="button" value="jQuery" onclick="funcjQuery()">
+
+    <script>
+        function funcJs(){
+            let lis = document.getElementById("active");
+            lis.style.color = "red";
+            lis.style.textDecoration = "underline";
+        }
+        function funcjQuery(){
+            $("#active").css('color', 'blue')
+                        .css('textDecoration', 'underline');
+        }
+ 
+    </script>
+</body>
+</html>
